@@ -9,9 +9,9 @@ async function bootstrap() {
 
   const configService = app.get(ConfigService);
 
-  const PORT = await configService.get('PORT');
+  const PORT = (await configService.get('PORT')) || 3000;
 
-  await app.listen(PORT || 3000);
+  await app.listen(PORT);
 
   console.log(`Server start at port: ${PORT}...`);
 }

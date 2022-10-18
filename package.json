@@ -67,6 +67,15 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/../src/$1",
+      "^@configs/(.*)$": "<rootDir>/../src/configs/$1",
+      "^@guards/(.*)$": "<rootDir>/../src/guards/$1",
+      "^@helpers/(.*)$": "<rootDir>/../src/helpers/$1",
+      "^@interceptors/(.*)$": "<rootDir>/../src/interceptors/$1",
+      "^@middleware/(.*)$": "<rootDir>/../src/middleware/$1",
+      "^@pipes/(.*)$": "<rootDir>/../src/pipes/$1"     
+    }
   }
 }

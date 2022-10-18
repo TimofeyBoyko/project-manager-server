@@ -16,6 +16,16 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["src/*"],
+      "@configs/*": ["src/configs/*"],
+      "@guards/*": ["src/guards/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@interceptors/*": ["src/interceptors/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@pipes/*": ["src/pipes/*"],
+      
+    }
   }
 }

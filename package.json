@@ -25,9 +25,12 @@
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/typeorm": "^9.0.1",
+    "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "typeorm": "^0.3.10"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
@@ -75,7 +78,7 @@
       "^@helpers/(.*)$": "<rootDir>/../src/helpers/$1",
       "^@interceptors/(.*)$": "<rootDir>/../src/interceptors/$1",
       "^@middleware/(.*)$": "<rootDir>/../src/middleware/$1",
-      "^@pipes/(.*)$": "<rootDir>/../src/pipes/$1"     
+      "^@pipes/(.*)$": "<rootDir>/../src/pipes/$1"
     }
   }
 }
